@@ -6,9 +6,6 @@ public class VigenereCipher implements Cipher {
     private final String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
     private String key;
 
-    public VigenereCipher(String key) {
-        this.key = key;
-    }
 
     @Override
     public String encode(String textToEncode) {
@@ -43,5 +40,9 @@ public class VigenereCipher implements Cipher {
             }
         }
         return stringBuilder.toString();
+    }
+
+    public void setKey(String key) {
+        this.key = key.toLowerCase();
     }
 }
