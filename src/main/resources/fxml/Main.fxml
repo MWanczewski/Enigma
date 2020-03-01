@@ -15,7 +15,8 @@
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Close" />
+                        <MenuItem mnemonicParsing="false" onAction="#registerUser" text="Register" />
+                        <MenuItem mnemonicParsing="false" onAction="#closeApp" text="Exit" />
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edit">
@@ -32,11 +33,10 @@
         </MenuBar>
         <Button layoutX="153.0" layoutY="75.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="25.0" prefWidth="73.0" text="Save" />
         <Button layoutX="153.0" layoutY="113.0" mnemonicParsing="false" onAction="#loadFile" prefHeight="25.0" prefWidth="73.0" text="Load" />
-      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
-      <ChoiceBox fx:id="cipherChoiceBox" layoutX="439.0" layoutY="100.0" prefHeight="25.0" prefWidth="173.0" />
-      <Label layoutX="25.0" layoutY="79.0" prefHeight="17.0" prefWidth="118.0" text="Choose save directory" wrapText="true" />
-      <Label layoutX="27.0" layoutY="117.0" prefHeight="17.0" prefWidth="112.0" text="Choose file to load" />
-      <Label layoutX="473.0" layoutY="79.0" text="Cipher method type" />
-      <Label layoutX="488.0" layoutY="130.0" text="Choose action" />
+        <ChoiceBox fx:id="cipherChoiceBox" layoutX="439.0" layoutY="100.0" prefHeight="25.0" prefWidth="173.0" />
+        <Label layoutX="25.0" layoutY="79.0" prefHeight="17.0" prefWidth="118.0" text="Choose save directory" wrapText="true" />
+        <Label layoutX="27.0" layoutY="117.0" prefHeight="17.0" prefWidth="112.0" text="Choose file to load" />
+        <Label layoutX="473.0" layoutY="79.0" text="Cipher method type" />
+        <Label layoutX="488.0" layoutY="130.0" text="Choose action" />
     </children>
 </AnchorPane>

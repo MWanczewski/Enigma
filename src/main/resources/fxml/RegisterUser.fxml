@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="userLayout" prefHeight="295.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterUserController">
+   <children>
+      <TextField fx:id="loginField" layoutX="234.0" layoutY="55.0" />
+      <TextField fx:id="passwordField" layoutX="234.0" layoutY="107.0" />
+      <TextField fx:id="emailField" layoutX="234.0" layoutY="155.0" />
+      <Label layoutX="149.0" layoutY="53.0" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="132.0" layoutY="105.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="150.0" layoutY="153.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button layoutX="96.0" layoutY="230.0" mnemonicParsing="false" onAction="#close" text="cancel" />
+      <Button layoutX="320.0" layoutY="230.0" mnemonicParsing="false" onAction="#registerUser" text="Sign in" />
+      <Text fontSmoothingType="LCD" layoutX="91.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in!" wrappingWidth="193.13671875">
+         <font>
+            <Font name="Century Gothic Bold Italic" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
